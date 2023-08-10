@@ -1,11 +1,9 @@
 /* eslint-disable */
 import "bootstrap";
-import "./styles.css";
+import "scr/styles.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-import "index.html";
-import "styles.css";
+import "scr/index.html";
+import "scr/styles.css";
 
 window.onload = function() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
