@@ -1,0 +1,17 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+header,
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+header {
+	top: 0;
+}
+
+footer {
+	bottom: 0;
+}
