@@ -1,7 +1,6 @@
 /* eslint-disable */
 import "file-loader?name=[name].[ext]!../index.html";
 import "../assets/img/4geeks.ico";
-import "../style/index.scss";
 
 window.onload = function() {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
