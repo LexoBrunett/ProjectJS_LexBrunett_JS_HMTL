@@ -25,7 +25,7 @@ window.onload = function() {
     when[rand(when.length)];
 
   let excuseSpan = document.querySelector("#excuse");
-  excuseSpan.innerHTML = excusa;
+  excuseSpan.innerHTML = sentence;
 };
 
 function rand(length) {
