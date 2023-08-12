@@ -2,32 +2,32 @@
 import "file-loader?name=[name].[ext]!../index.html";
 import "../assets/img/4geeks.ico";
 
-window.onload = function() {
-  let who = ["The dog", "My grandma", "His turtle", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "the keys", "the car"];
-  let when = [
-    "before the class",
-    "right on time",
-    "when I finished",
-    "during my lunch",
-    "while I was praying"
-  ];
+let who = ["The dog", "My grandma", "His turtle", "My bird"];
+let action = ["ate", "peed", "crushed", "broke"];
+let what = ["my homework", "the keys", "the car"];
+let when = [
+  "before the class",
+  "right on time",
+  "when I finished",
+  "during my lunch",
+  "while I was praying"
+];
 
+window.onload = function() {
   let sentence =
-    who[rand(who.length)] +
+    who[getRandom(who.length)] +
     " " +
-    action[rand(action.length)] +
+    action[getRandom(action.length)] +
     " " +
-    what[rand(what.length)] +
+    what[getRandom(what.length)] +
     " " +
-    when[rand(when.length)];
+    when[getRandom(when.length)];
 
   let excuseSpan = document.querySelector("#excuse");
   excuseSpan.innerHTML = sentence;
 };
 
-function rand(length) {
-  let number = Math.floor(Math.random() * length);
+function getRandom(arrayLength) {
+  let number = Math.floor(Math.random() * arrayLength);
   return number;
 }
